@@ -60,4 +60,39 @@ html {
   word-spacing: 2px;
 }
 
+h1, h2 {
+  font-family: "headingfont";
+  letter-spacing: 3px;
+}
+
+h1 {
+  font-size: 3.33rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h2 + p {
+  text-indent: 20px;
+}
+
+a[href^="http"] {
+  background: url("external-link-52.png") no-repeat 100% 0;
+  background-size: 16px 16px;
+  padding-right: 19px;
+}
+
+a:link,
+a:visited {
+  color: brown;
+}
+
+a:focus {
+  color: coral;
+  text-decoration: none;
+  outline: none;
+}
+
 
