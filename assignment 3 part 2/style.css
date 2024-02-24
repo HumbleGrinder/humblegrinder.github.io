@@ -8,6 +8,8 @@ div {
   margin: auto;
   line-height: 9;
 
-  font-size: 1.1rem;
-  
+  font-size: 1.01rem;
+  /*since the default is 16 and we need something a little bigger, just making it 1.01x rem works*/
+  text-align: center;
+  color: white;
 }
