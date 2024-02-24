@@ -11,5 +11,12 @@ div {
   font-size: 1.01rem;
   /*since the default is 16 and we need something a little bigger, just making it 1.01x rem works*/
   text-align: center;
-  color: white;
+  color: limegreen;
+
+  text-shadow: 1px 1px 1px black;
+
+  border-radius: 10px;
+  border: 1px solid #990000;
+
+
 }
