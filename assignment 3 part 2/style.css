@@ -11,12 +11,23 @@ div {
   font-size: 1.01rem;
   /*since the default is 16 and we need something a little bigger, just making it 1.01x rem works*/
   text-align: center;
-  color: limegreen;
+  color: royalblue;
 
   text-shadow: 1px 1px 1px black;
 
-  border-radius: 10px;
-  border: 1px solid #990000;
+  border-radius: 15px;
+  border: 1px solid maroon;
 
+  background-color: aquamarine;
+  background: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
 
+  box-shadow: 4px 4px 3px rgb(59, 59, 59),
+  inset 3px 3px 3px rgba(255, 255, 255, 0.75),
+  inset -3px -3px 3px rgba(0, 0, 0, 0.5);
+  
 }
