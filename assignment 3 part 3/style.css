@@ -95,4 +95,30 @@ a:focus {
   outline: none;
 }
 
+a:hover {
+  color: coral;
+  text-decoration: none;
+}
 
+a:active {
+  color: brown;
+  outline: 1px dashed grey;
+}
+
+ul {
+  list-style-type: square;
+}
+
+nav li {
+  list-style-type: none;
+  text-align: center;
+  width: 20rem;
+  padding: 1.45rem;
+  margin: 1rem;
+  border: 2px solid #904242;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 2.5rem;
+}
