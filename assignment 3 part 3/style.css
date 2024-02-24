@@ -42,4 +42,22 @@ header, footer {
   border-bottom: 5px solid #a66;
 }
 
-/* WRITE YOUR CODE BELOW HERE */
+@font-face {
+  font-family: "bodyfont";
+  src: url("Cabin-Regular.ttf");
+}
+
+@font-face {
+  font-family: "headingfont";
+  src: url("Seagram\ tfb.ttf");
+}
+
+html {
+  font-family: "bodyfont";
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+
