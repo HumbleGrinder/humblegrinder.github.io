@@ -1,37 +1,23 @@
+
+/* Looping through images */
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
-
 const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
-/* Declaring the array of image filenames */
-const images = ['pic1.jpg', `pic2.jpg`, `pic3.jpg`, `pic4.jpg`, `pic5.jpg`];
-
-/* Declaring the alternative text for each image file */
-const alts = {
-    'pic1.jpg' : 'Human eye',
-    'pic2.jpg' : 'Rock',
-    'pic3.jpg' : 'Flowers',
-    'pic4.jpg' : 'Hieroglyphics',
-    'pic5.jpg' : 'Butterfly'
-}
-
 /* Looping through images */
-for (const image of images) {
-    const newImage = document.createElement('img');
-    newImage.setAttribute('src', 'images/${image}');
-    newImage.setAttribute('alt', alts[image]);
-    thumbBar.appendChild(newImage);
-    newImage.addEventListener('click', x => {
-        displayedImage.src = x.target.src;
-        displayedImage.alt = x.target.src;
-    });
+for (let k = 1; k <= 5; k++){
+  const newImage = document.createElement('img');
+  newImage.setAttribute('src', 'images/pic' + k + '.jpg');
+  thumbBar.appendChild(newImage);
+
+  newImage.addEventListener('click', setImage);
 }
 
+function setImage(e){
+  const imgPath = e.target.getAttribute('src');
 
-const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
-thumbBar.appendChild(newImage);
+  // set thumbnail as the picture displayed 
+  displayedImage.setAttribute('src', imgPath);
+}
 
-/* Wiring up the Darken/Lighten button */
