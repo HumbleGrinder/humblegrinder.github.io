@@ -19,19 +19,15 @@ function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
-function Shape(x, y, velX, velY, exist) {
-  this.x = x;
-  this.y = y;
-  this.velX = velX;
-  this.velY = velY;
-  this.exist = exist;
+class Shape {
+  constructor(x, y, velX, velY, exist) {
+    this.x = x;
+    this.y = y;
+    this.velX = velX;
+    this.velY = velY;
+    this.exist = exist;
+  }
 }
-function Ball(x, y, velX, velY, color, size, exist) {
-  Shape.call(this, x, y, velX, velY, exist);
-  this.color = color;
-  this.size = size;
-}
-
 
 class Ball {
   constructor(x, y, velX, velY, color, size) {
@@ -115,6 +111,12 @@ function loop() {
   }
 
   requestAnimationFrame(loop);
+}
+
+function EvilCircle(x = 500, y = 200, velX = 2, velY = 2, color = 'rgb(255, 255, 255)', size = 45) {
+  Shape.call(this, x, y, velX, velY)
+  this.color = color;
+  this.size = size;
 }
 
 loop();
