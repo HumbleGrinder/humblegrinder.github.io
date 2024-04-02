@@ -12,7 +12,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-
+document.querySelector("html").style.backgroundColor = "cyan"; 
 function result() {
   let newStory = storyText;
   let xItem = randomValueFromArray(insertX);
