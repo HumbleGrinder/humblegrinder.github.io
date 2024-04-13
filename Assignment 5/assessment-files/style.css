@@ -18,6 +18,13 @@ body {
 
 /* || typography */
 
+h1,
+h2,
+h3 {
+  font-family: 'Arial', cursive;
+  color: rgb(186, 60, 60);
+}
+
 font[size="7"], font[size="6"], font[size="5"] {
   font-family: 'Sonsie One', cursive;
   color: #2a2a2a;
