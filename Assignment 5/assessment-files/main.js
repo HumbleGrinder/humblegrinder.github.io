@@ -45,4 +45,3 @@ function submitComment() {
   nameField.value = '';
   commentField.value = '';
 }
-
