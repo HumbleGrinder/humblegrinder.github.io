@@ -18,78 +18,43 @@ body {
 
 /* || typography */
 
-h1, h2, h3 {
-  font-family: 'Arial', bold;
-  color: rgb(186, 60, 60);
-}
+/* || typography */
 
-font[size="7"], font[size="6"], font[size="5"] {
-  font-family: 'Sonsie One', cursive;
-  color: #2a2a2a;
+h1, h2, h3 {
+  font-family: 'sonsie one', cursive;
+  color: rgb(129, 80, 253);
 }
 
 p, input, li, table, label {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #2a2a2a;
-}
-
-font[size="7"] {
-  font-size: 4rem;
-  text-align: center;
-  color: white;
-  text-shadow: 2px 2px 10px black;
-}
-
-font[size="6"] {
-  font-size: 3rem;
-  text-align: center;
-}
-
-font[size="5"] {
-  font-size: 2.2rem;
-}
-
-p, li, table {
-  font-size: 1.6rem;
-  line-height: 1.5;
+  margin-bottom: 5px;
 }
 
 /* || header layout */
 
-div[class="nav"], article, footer, .secondary {
-  background-color: #e3d5f3;
-}
-
-article, footer, .secondary {
-  padding: 10px 30px;
-}
-
-article {
-  margin-right: 10px;
-}
-
-div[class="nav"] {
+nav {
   height: 50px;
-  background-color: ff80ff;
+  background-color: #ff80ff; /* Changed background color */
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
 }
 
-div[class="nav"] ul {
+nav ul {
   padding: 0;
   list-style-type: none;
   flex: 2;
   display: flex;
 }
 
-div[class="nav"] li {
+nav li {
   display: inline;
   text-align: center;
   flex: 1;
 }
 
-div[class="nav"] a {
+nav a {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
@@ -97,7 +62,7 @@ div[class="nav"] a {
   color: black;
 }
 
-div[class="nav"] .search {
+nav .search {
   flex: 1;
   display: flex;
   align-items: center;
@@ -122,59 +87,6 @@ div[class="nav"] .search {
   color: white;
 }
 
-/* || main layout */
-
-main {
-  display: flex;
-}
-
-article {
-  flex: 5;
-}
-
-.secondary {
-  flex: 2;
-}
-
-footer {
-  margin-top: 10px;
-}
-
-/* Table styling */
-
-table {
-  width: 100%;
-  background-color: #dde;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 10px;
-}
-
-td {
-  text-align: center;
-}
-
-th[scope="col"] {
-  border-bottom: 1px solid black;
-}
-
-tbody tr:nth-child(odd) {
-  background-color: #def;
-}
-
-/* styling content images and audio */
-
-img, audio {
-  display: block;
-  margin: 0 auto;
-}
-
-audio {
-  width: 500px;
-}
-
 /* Comments styling */
 
 .comments {
@@ -186,12 +98,8 @@ audio {
   cursor: pointer;
 }
 
-.comments font[size="6"] {
-  font-size: 2rem;
-}
-
-.comments font[size="6"]:nth-of-type(2) {
-  margin-bottom: 0;
+.comments h2 {
+  font-size: 2rem; /* Changed font-size */
 }
 
 .comment-form {
