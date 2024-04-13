@@ -18,10 +18,8 @@ body {
 
 /* || typography */
 
-h1,
-h2,
-h3 {
-  font-family: 'Arial', cursive;
+h1, h2, h3 {
+  font-family: 'Arial', bold;
   color: rgb(186, 60, 60);
 }
 
