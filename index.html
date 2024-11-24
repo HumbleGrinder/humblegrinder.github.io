@@ -49,6 +49,34 @@
           font-size: 1.5em;
         }
       }
+      .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 20px;
+      }
+
+      .button-container button {
+        background-color: pink;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1em;
+        font-family: Arial, sans-serif;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: transform 0.2s, background-color 0.2s;
+      }
+
+      .button-container button:hover {
+        background-color: purple;
+        transform: scale(1.1);
+      }
+
+      .button-container a {
+        text-decoration: none;
+      }
+
     </style>
   </head>
   <body>
@@ -57,6 +85,12 @@
       <iframe
         src="https://onedrive.live.com/embed?resid=E208054BEDEBE043%21115&authkey=%21AN-D45nIT_slX6U&em=2&Item=Table1&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True">
       </iframe>
+    </div>
+    <div class ="button-container">
+      <a href="best-picture.html"><button>Best Picture</button></a>
+      <a href="best-actress.html"><button>Best Actress</button></a>
+      <a href="best-actor.html"><button>Best Actor</button></a>
+      <a href="best-director.html"><button>Best Director</button></a>
     </div>
   </body>
 </html>
