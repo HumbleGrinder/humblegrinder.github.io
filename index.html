@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sup lil fella</title>
     <style>
-      /* Make the image cover the entire viewport */
+      /* Responsive background image */
       body {
         margin: 0;
         padding: 0;
@@ -13,12 +13,12 @@
         background-size: cover;  /* Ensures it covers the screen */
         background-position: center; /* Center the image */
         background-attachment: fixed; /* Keeps the image fixed when scrolling */
-        height: 100vh; /* Full viewport height */
+        min-height: 100vh; /* Full viewport height */
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        color: white;  /* Text color for better visibility on dark/light backgrounds */
+        color: white;  /* Text color for better visibility */
       }
 
       h1 {
@@ -26,18 +26,28 @@
         font-size: 2em;
         font-family: Georgia, "Times New Roman", Times, serif;
         border-bottom: 1px solid purple;
+        text-align: center;
+        margin: 20px;
       }
 
-      #images img {
-        margin: 10px;
-        border: 2px solid #333;
-        width: 300px;
+      /* Responsive iframe container */
+      #onedrive-embed {
+        width: 90%; /* Adjust width to fit within screen */
+        max-width: 833px; /* Keep the original max width */
+        aspect-ratio: 1.39; /* Maintain iframe aspect ratio (833/600) */
       }
 
-      #images {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
+      iframe {
+        width: 100%; /* Fill the container */
+        height: 100%; /* Maintain aspect ratio */
+        border: none;
+      }
+
+      /* Adjustments for smaller screens */
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 1.5em;
+        }
       }
     </style>
   </head>
@@ -45,10 +55,6 @@
     <h1>No matter what this sheet says, Anora is winning</h1>
     <div id="onedrive-embed">
       <iframe
-        width="833"
-        height="600"
-        frameborder="0"
-        scrolling="no"
         src="https://onedrive.live.com/embed?resid=E208054BEDEBE043%21115&authkey=%21AN-D45nIT_slX6U&em=2&Item=Table1&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True">
       </iframe>
     </div>
